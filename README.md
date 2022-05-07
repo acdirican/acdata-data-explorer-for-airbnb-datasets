@@ -1,6 +1,4 @@
-![Alt text](https://github.com/acdirican/acdata-data-explorer-for-airbnb-datasets/blob/master/logo.png?raw=true)
-
-# ACData - Data Explorer for Airbnb Datasets
+ # ACData - Data Explorer for Airbnb Datasets <img align = "center" src="https://github.com/acdirican/acdata-data-explorer-for-airbnb-datasets/blob/master/logo.png?raw=true" width="150" />
 
 The ACData Data Explorer allows you to open, search and filter Airbnb datasets in CSV format (, as delimeter). You can also observe some statistics and charts about the active data and save it.
 
@@ -22,7 +20,7 @@ Please inspect the class diagram below and the screen print outs of the software
 
 <b>Screen Print outs</b>
 <li>Main Frame</li>
-![Alt text](https://github.com/acdirican/acdata-data-explorer-for-airbnb-datasets/blob/master/mainframe.jpg?raw=true)
+<img width="700" src="https://github.com/acdirican/acdata-data-explorer-for-airbnb-datasets/blob/master/mainframe.jpg?raw=true" />
 
 <li>Statistics Dialog</li>
-![Alt text](https://github.com/acdirican/acdata-data-explorer-for-airbnb-datasets/blob/master/statistics.jpg?raw=true)
+<img width="700" src="https://github.com/acdirican/acdata-data-explorer-for-airbnb-datasets/blob/master/statistics.jpg?raw=true" />
