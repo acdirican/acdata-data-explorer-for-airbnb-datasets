@@ -21,3 +21,8 @@ Please inspect the class diagram below and the screen print outs of the software
 <b>Class Diagram</b>
 
 <b>Screen Print outs</b>
+<li>Main Frame</li>
+![Alt text](https://github.com/acdirican/acddata-data-explorer-for-airbnb-datasets/blob/master/mainframe.jpg?raw=true)
+
+<li>Statistics Dialog</li>
+![Alt text](https://github.com/acdirican/acddata-data-explorer-for-airbnb-datasets/blob/master/statistics.jpg?raw=true)
