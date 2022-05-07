@@ -2,9 +2,13 @@
  
  # ACData - Data Explorer for Airbnb Datasets 
 
-The ACData Data Explorer allows you to open, search and filter Airbnb datasets in CSV format (, as delimeter). You can also observe some statistics and charts about the active data and save it.
+The ACData Data Explorer allows you to open, search and filter Airbnb datasets in CSV format (, as delimeter). You can also observe some statistics and charts about the active data.
 
-You can open data sets directly from an internet source by using its URL.
+The software allows you to save the active data in either <b>CSV</b> or <b>JSON</b> format.
+
+You can open data sets directly from an internet source by using its URL. For instance,
+
+http://data.insideairbnb.com/the-netherlands/north-holland/amsterdam/2021-12-05/visualisations/listings.csv
 
 <b>Desing and Implementation</b> 
 
