@@ -1,4 +1,4 @@
-# ACD Data Explorer for Airbnb Datasets
+# ACData - Data Explorer for Airbnb Datasets
 
 The ACD Data Explorer allows you to open, search and filter Airbnb datasets in CSV format (, as delimeter). You can also observe some statistics and charts about the active data and save it.
 
