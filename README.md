@@ -1,6 +1,8 @@
+![Alt text](https://github.com/acdirican/acddata-data-explorer-for-airbnb-datasets/blob/master/logo.png?raw=true)
+
 # ACData - Data Explorer for Airbnb Datasets
 
-The ACD Data Explorer allows you to open, search and filter Airbnb datasets in CSV format (, as delimeter). You can also observe some statistics and charts about the active data and save it.
+The ACData Data Explorer allows you to open, search and filter Airbnb datasets in CSV format (, as delimeter). You can also observe some statistics and charts about the active data and save it.
 
 You can open data sets directly from an internet source by using its URL.
 
@@ -14,8 +16,8 @@ Some of the principles I have tried to follow are <b>Abstraction, Encapsulation,
 
 I used <b>Facades</b> in packages <b>gui.charts, gui.dataviewers and dataset</b>. These also comply with the <b>Factory</b> design pattern. Moreover, for the implementatipn of filtering mechanisms in the dataset package, I applied <b>Decorator</b> design pattern. 
 
-Please inspect the class diagram below and the screen outs of the software to understand well its functions. 
+Please inspect the class diagram below and the screen print outs of the software to understand well its functions. 
 
 <b>Class Diagram</b>
 
-<b>Screen-outs</b>
+<b>Screen Print outs</b>
