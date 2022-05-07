@@ -51,6 +51,9 @@ public class MainFrame extends JFrame {
 	 * Serial
 	 */
 	private static final long serialVersionUID = 520734926472913727L;
+
+	public static final int CSV = 0;
+	public static final int JSON = 1;
 	
 	private Dataset dataset;
 	private Dataset current;
@@ -265,14 +268,36 @@ public class MainFrame extends JFrame {
 		setJMenuBar(new MainFrameMenuBar(this));
 	}
 
-	void saveTable(File file) throws IOException {
+	void saveTable(File file, int saveType) throws IOException {
 		List<String> lines = new ArrayList<>();
-		lines.add(Dataset.titles());
+		if (saveType == CSV) {
+			lines.add(Dataset.titles());
+		}
+		else {
+			lines.add("[");
+		}
 		for (Property property : current.properties()) {
-			lines.add(property.toString());
+			if (saveType == CSV) {
+				lines.add(property.toString());
+			}
+			else if (saveType == JSON){
+				lines.add(property.toJSON() + ",");
+			}
+			else {
+				JOptionPane.showConfirmDialog(this, "Unkown file save type");
+				return;
+			}
 		}
 		file.createNewFile();
+	
+		if (saveType == JSON){
+			lines.remove(lines.size()-1);
+			lines.add(current.properties().get(current.properties().size()-1).toJSON());
+			lines.add("]");
+		}
+		
 		Files.write(file.toPath(), lines, Charset.forName("UTF-8"), StandardOpenOption.TRUNCATE_EXISTING);
+		
 	}
 
 	public int search(String text, int startRow) {

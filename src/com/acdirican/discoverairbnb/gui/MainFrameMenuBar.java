@@ -18,9 +18,11 @@ public class MainFrameMenuBar extends JMenuBar {
 	 * Serial
 	 */
 	private static final long serialVersionUID = 6378516518505017413L;
+	
+	private MainFrame main;
 
 	public MainFrameMenuBar(MainFrame mainFrame) {
-		MainFrame main = mainFrame;
+		this.main = mainFrame;
 		
 
 		// File Menu, F - Mnemonic
@@ -63,7 +65,7 @@ public class MainFrameMenuBar extends JMenuBar {
 		helpMenu.add(aboutMenuItem);
 			
 		// File->Open, O - Mnemonic
-		JMenuItem newMenuItem = new JMenuItem("Open Dataset from File System", KeyEvent.VK_O);
+		JMenuItem newMenuItem = new JMenuItem("Open from File System", KeyEvent.VK_O);
 		newMenuItem.addActionListener(new ActionListener() {
 
 			@Override
@@ -93,7 +95,7 @@ public class MainFrameMenuBar extends JMenuBar {
 		fileMenu.add(newMenuItem);
 
 		// File->Open Web, O - Mnemonic
-				JMenuItem webMenuItem = new JMenuItem("Open Dataset from WWW", KeyEvent.VK_W);
+				JMenuItem webMenuItem = new JMenuItem("Open from WWW", KeyEvent.VK_W);
 				webMenuItem.addActionListener(new ActionListener() {
 
 					@Override
@@ -104,47 +106,16 @@ public class MainFrameMenuBar extends JMenuBar {
 				fileMenu.add(webMenuItem);
 				
 		// File->Save, S - Mnemonic
-		JMenuItem saveMenuItem = new JMenuItem("Save Current View", KeyEvent.VK_S);
-		saveMenuItem.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				if (!main.isSet()) {
-					JOptionPane.showMessageDialog(main, "Please load a dataset first.");
-					return;
-				}
-				
-				JFileChooser filesave = new JFileChooser();
-				File f = null;
-				try {
-					f = new File(new File(".").getCanonicalPath());
-				} catch (IOException e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				}
-				filesave.setCurrentDirectory(f);
-
-				FileNameExtensionFilter filter = new FileNameExtensionFilter("CSV files", "csv");
-				filesave.addChoosableFileFilter(filter);
-				
-				int ret = filesave.showDialog(null, "Save file");
-				
-				if (ret == JFileChooser.APPROVE_OPTION) {
-					File file = filesave.getSelectedFile();
-					try {
-						main.saveTable(file);
-						JOptionPane.showMessageDialog(main, "Current view saved.");
-					} catch (IOException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
-					}
-				}
-
-			}
-
-		});
+		JMenuItem saveMenuItem = new JMenuItem("Save as CSV", KeyEvent.VK_S);
+		saveMenuItem.addActionListener(createFileSaveListener(MainFrame.CSV));
 		fileMenu.add(saveMenuItem);
 
+		// File->Save as JSON, J - Mnemonic
+		JMenuItem saveJSONMenuItem = new JMenuItem("Save as JSON", KeyEvent.VK_J);
+		saveJSONMenuItem.addActionListener(createFileSaveListener(MainFrame.JSON));
+		fileMenu.add(saveJSONMenuItem);
+		
+		
 		// File->Exit, E - Mnemonic
 		JMenuItem exitMenuItem = new JMenuItem("Exit", KeyEvent.VK_E);
 		exitMenuItem.addActionListener(new ActionListener() {
@@ -155,5 +126,50 @@ public class MainFrameMenuBar extends JMenuBar {
 			}
 		});
 		fileMenu.add(exitMenuItem);
+	}
+	
+	private ActionListener createFileSaveListener(int saveType) {
+		return new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				if (!main.isSet()) {
+					JOptionPane.showMessageDialog(main, "Please load a dataset first.");
+					return;
+				}
+								
+				JFileChooser filesave  = selectAFile("csv");
+				int ret = filesave  .showDialog(null, "Save file");
+				
+				if (ret == JFileChooser.APPROVE_OPTION) {
+					File file = filesave.getSelectedFile();
+					try {
+						main.saveTable(file, saveType);
+						JOptionPane.showMessageDialog(main, "Current view saved.");
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+				}
+
+			}	
+
+		};
+	}
+
+	private JFileChooser selectAFile(String ext) {
+		JFileChooser filesave = new JFileChooser();
+		File f = null;
+		try {
+			f = new File(new File(".").getCanonicalPath());
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		filesave.setCurrentDirectory(f);
+
+		FileNameExtensionFilter filter = new FileNameExtensionFilter(ext + " files", "ext");
+		filesave.addChoosableFileFilter(filter);
+		return filesave;
 	}
 }

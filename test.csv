@@ -1,0 +1,12 @@
+id,name,host_id,host_name,neighbourhood_group,neighbourhood,latitude,longitude,room_type,price,minimum_nights,number_of_reviews,last_review,reviews_per_month,calculated_host_listings_count,availability_365
+5442646,Cheap couch at Istanbul,20366937,Jon,,Sariyer,41.08719,29.04661,Shared room,100,1,0,,0.0,1,365
+7732102,Sarıyer Zekeriyakoy,20032599,,,Sariyer,41.21102,29.01702,Shared room,47,1,0,,0.0,1,365
+7990839,Best View in Istanbul,8182696,Gürkan,,Sariyer,41.08612,29.04933,Shared room,132,1,4,2018-05-16,0.19,1,363
+12949764,Modern bi dairede mükemmel manzara,39256963,Ünal,,Sariyer,41.16826,29.02798,Shared room,53,1,4,2017-08-31,0.13,1,365
+16680483,Boğaz manzaralı daire,2887039,Bertug,,Sariyer,41.10617,29.04004,Shared room,105,1,0,,0.0,1,180
+18543540,Old Greek Home 1+1 (Near Bosporus),124808557,Srcn,,Sariyer,41.12113,29.06903,Shared room,100,1,0,,0.0,1,364
+21259794,Suit,127436871,Esin,,Sariyer,41.1888,29.05028,Shared room,158,1,0,,0.0,1,0
+22110483,Cozy house in the historical part of Istanbul,81372195,Nazlı,,Sariyer,41.10445,29.05398,Shared room,69,1,0,,0.0,1,363
+23029958,Sweethome,105247784,Esen,,Sariyer,41.09849,29.04813,Shared room,132,1,1,2018-07-14,0.14,1,363
+24558786,Cats house,56888916,Mehmet,,Sariyer,41.08514,29.04765,Shared room,79,2,0,,0.0,1,89
+25033184,*Sunny* apartment near metro station & sea side.,152677402,Aseel,,Sariyer,41.13783,29.04151,Shared room,844,1,0,,0.0,2,90

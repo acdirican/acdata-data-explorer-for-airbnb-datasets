@@ -140,14 +140,13 @@ public class Property {
 		for (String key : fields.keySet()) {
 			Object val = fields.get(key);
 			if (val != null) {
-				joiner.add(key + ":" + fields.get(key).toString());
+				joiner.add(Utils.intoDblQuotation(key) + ":" + Utils.intoDblQuotation(fields.get(key)));
 			}
 			else {
-				joiner.add(key + ":" + "");
+				joiner.add(Utils.intoDblQuotation(key)  + ":" + "");
 			}
-			
 		}
-		return "{" + joiner.toString() + "}";
+		return "{" + joiner.toString() + "}" + System.lineSeparator();
 	}
 
 	public Map<String, Object> toMap() {

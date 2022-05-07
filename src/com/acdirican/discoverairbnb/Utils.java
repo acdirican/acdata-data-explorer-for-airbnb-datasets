@@ -1,6 +1,7 @@
 package com.acdirican.discoverairbnb;
 
 import java.awt.Color;
+import java.time.LocalDate;
 import java.util.Random;
 
 /**
@@ -39,6 +40,12 @@ public final class Utils {
 
 	public static String stringContaningComma(String str) {
 		return str.contains(",") ? '"' + str + '"' : str;
+	}
+
+	public static <T> String intoDblQuotation(T object) {
+		return  (object instanceof String) || (object instanceof LocalDate) 
+				? '"' + object.toString() + '"' 
+				: object.toString();
 	}
 
 }
