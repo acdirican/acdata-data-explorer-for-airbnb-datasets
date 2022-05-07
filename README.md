@@ -15,5 +15,7 @@ Some of the principles I have tried to follow are <b>Abstraction, Encapsulation,
 I used <b>Facades</b> in packages <b>gui.charts, gui.dataviewers and dataset</b>. These also comply with the <b>Factory</b> design pattern. Moreover, for the implementatipn of filtering mechanisms in the dataset package, I applied <b>Decorator</b> design pattern. 
 
 Please inspect the class diagram below and the screen outs of the software to understand well its functions. 
+
 <b>Class Diagram</b>
+
 <b>Screen-outs</b>
