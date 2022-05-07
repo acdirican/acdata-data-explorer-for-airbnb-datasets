@@ -109,6 +109,11 @@ public class MainFrameMenuBar extends JMenuBar {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				if (!main.isSet()) {
+					JOptionPane.showMessageDialog(main, "Please load a dataset first.");
+					return;
+				}
+				
 				JFileChooser filesave = new JFileChooser();
 				File f = null;
 				try {

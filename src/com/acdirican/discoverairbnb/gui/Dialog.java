@@ -15,5 +15,6 @@ class Dialog extends JDialog {
 		setSize(width, height);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		setModal(true);
+		setIconImage(main.getIconImage());
 	}
 }

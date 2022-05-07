@@ -15,7 +15,7 @@ import com.acdirican.discoverairbnb.Utils;
 import com.acdirican.discoverairbnb.dataset.DatasetManager;
 import com.acdirican.discoverairbnb.dataset.entities.Dataset;
 import com.acdirican.discoverairbnb.dataset.entities.Fields;
-import com.acdirican.discoverairbnb.statistics.Statistics;
+import com.acdirican.discoverairbnb.dataset.statistics.Statistics;
 
 
 

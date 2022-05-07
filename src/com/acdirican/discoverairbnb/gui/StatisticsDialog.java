@@ -9,12 +9,12 @@ import javax.swing.JPanel;
 
 import com.acdirican.discoverairbnb.dataset.entities.Dataset;
 import com.acdirican.discoverairbnb.dataset.entities.Fields;
+import com.acdirican.discoverairbnb.dataset.statistics.Descriptive;
+import com.acdirican.discoverairbnb.dataset.statistics.Statistics;
 import com.acdirican.discoverairbnb.gui.charts.Chart;
 import com.acdirican.discoverairbnb.gui.charts.ChartFactory;
 import com.acdirican.discoverairbnb.gui.dataviewers.DataViewer;
 import com.acdirican.discoverairbnb.gui.dataviewers.DataViewerFactory;
-import com.acdirican.discoverairbnb.statistics.Descriptive;
-import com.acdirican.discoverairbnb.statistics.Statistics;
 
 
 /**

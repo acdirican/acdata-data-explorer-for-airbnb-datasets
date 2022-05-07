@@ -1,4 +1,4 @@
-package com.acdirican.discoverairbnb.statistics;
+package com.acdirican.discoverairbnb.dataset.statistics;
 
 
 import java.util.Collection;

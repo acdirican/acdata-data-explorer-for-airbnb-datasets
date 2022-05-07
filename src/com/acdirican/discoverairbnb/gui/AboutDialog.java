@@ -31,7 +31,7 @@ class AboutDialog extends Dialog {
 		
 		setLayout(new BorderLayout());
 
-		JLabel textLabel = new JLabel("<html><body><center>Airbnb Data Explorer v1.0 <br>"
+		JLabel textLabel = new JLabel("<html><body><center>ACD Data Explorer for Airbn Datasets v1.0 <br>"
 				+ "Copyright (c) 2022 Ahmet Cengizhan Dirican <br>" + "All rights reserved <br> "
 				+ "<a href='https://github.com/acdirican'>https://github.com/acdirican</a></body></html>");
 		textLabel.setHorizontalAlignment(JLabel.CENTER);

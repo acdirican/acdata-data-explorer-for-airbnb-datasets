@@ -2,7 +2,9 @@ package com.acdirican.discoverairbnb.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
+import java.awt.Image;
 import java.awt.Insets;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -16,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
-
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -33,8 +35,8 @@ import com.acdirican.discoverairbnb.dataset.DatasetManager;
 import com.acdirican.discoverairbnb.dataset.entities.Dataset;
 import com.acdirican.discoverairbnb.dataset.entities.Fields;
 import com.acdirican.discoverairbnb.dataset.entities.Property;
-import com.acdirican.discoverairbnb.statistics.Descriptive;
-import com.acdirican.discoverairbnb.statistics.Statistics;
+import com.acdirican.discoverairbnb.dataset.statistics.Descriptive;
+import com.acdirican.discoverairbnb.dataset.statistics.Statistics;
 
 /**
  * Main frame of the software
@@ -61,12 +63,18 @@ public class MainFrame extends JFrame {
 	private JComboBox<String> lowerPriceComboBox;
 	private JComboBox<String> higherPriceComboBox;
 
+	private Image icon;
+
 	public MainFrame() {
-		setTitle("Data Explorer for Airbnb Datasets");
+		this.icon = new ImageIcon("icon.png").getImage();
+		
+		setTitle("ACData - Data Explorer for Airbnb Datasets");
 		setSize(900, 700);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setIconImage(icon);
+		
 		setLayout(new BorderLayout());
-
+		
 		createMenuBar();
 		createToolBar();
 		createTablePane();

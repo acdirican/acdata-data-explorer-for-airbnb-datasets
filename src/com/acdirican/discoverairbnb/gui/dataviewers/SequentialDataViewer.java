@@ -21,7 +21,7 @@ import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
 import com.acdirican.discoverairbnb.Utils;
-import com.acdirican.discoverairbnb.statistics.Descriptive;
+import com.acdirican.discoverairbnb.dataset.statistics.Descriptive;
 
 /**
  * Panel to show a group of data sequentially.
