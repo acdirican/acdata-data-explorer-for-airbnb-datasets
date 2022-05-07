@@ -41,7 +41,7 @@ class AboutDialog extends Dialog {
 				"<html><body><p>This software was coded fully in Java using Swing and Collections. I hope you enjoy it. </p></body></html>");
 		descLabel.setFont(new Font("Times New Roman", Font.PLAIN, 15));
 
-		ImageIcon abo2utImage = new ImageIcon("logo.png");
+		ImageIcon abo2utImage = new ImageIcon("about.png");
 		JLabel pictureLabel = new JLabel(abo2utImage);
 
 		JPanel panel = new JPanel();
