@@ -1,10 +1,8 @@
  <img align = "center" src="https://github.com/acdirican/acdata-data-explorer-for-airbnb-datasets/blob/master/logo.png?raw=true" width="150" />
  
- # ACData - Data Explorer for Airbnb Datasets 
+ # Robin&trade; - Data Explorer for Airbnb Datasets 
 
-The ACData Data Explorer allows you to open, search and filter Airbnb datasets in CSV format (, as delimeter). You can also observe some statistics and charts about the active data.
-
-The software allows you to save the active data in either <b>CSV</b> or <b>JSON</b> format.
+The Robin Data Explorer allows you to open, search and filter Airbnb datasets in CSV format (, as delimeter). You can also observe some statistics and charts about the active data. Furthermore, the software gives you the ability to save the active data in <b>CSV</b> or <b>JSON</b> formats.
 
 You can open data sets directly from an internet source by using its URL. For instance,
 
@@ -16,9 +14,9 @@ The projects was fully coded in Java using Swing and Java collections. In this v
 
 I desinged the software by paying considerable attention to modern Software Engineering an Object Oriented Design principles. In the code, you will find a well-defined  structure in which software modules have been properly seperated and structured, including Gui, Parser and Dataset .
 
-Some of the principles I have tried to follow are <b>Abstraction, Encapsulation, Information Hiding, Low Coupling and High Cohesion, no Monster Class</b>. To this end, in addition to numerous fine-tuning in the code, I applied vairous design patterns to obtaind a sound, flexiple and maintainable code.
+Some of the principles I have tried to follow are <b>Abstraction, Encapsulation, Information Hiding, Low Coupling and High Cohesion</b> etc. To this end, in addition to numerous precautions and fine-tuning in the code, I applied vairous design patterns to obtaind a sound, flexiple and maintainable software.
 
-I used <b>Facades</b> in modukes <b>gui.charts, gui.dataviewers and dataset</b>. These also comply with the <b>Factory</b> design pattern. Moreover, for the implementatipn of filtering mechanisms in the dataset package, I applied <b>Decorator</b> design pattern. 
+I used <b>Facades</b> in modules <b>gui.charts, gui.dataviewers and dataset</b>. These also comply with the <b>Factory</b> design pattern. Moreover, for the implementatipn of filtering mechanisms in the dataset package, I applied <b>Decorator</b> design pattern. 
 
 Please inspect the class diagram below and the screen print outs of the software to understand well its functions. 
 
