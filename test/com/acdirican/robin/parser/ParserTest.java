@@ -1,4 +1,4 @@
-package com.acdirican.discoverairbnb.parser;
+package com.acdirican.robin.parser;
 
 import static org.junit.jupiter.api.Assertions.*;
 
