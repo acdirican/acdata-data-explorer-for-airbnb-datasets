@@ -1,26 +1,21 @@
-# Fifty Shades of Multi-threading
+# ACData - Data Explorer for Airbnb Datasets
 
-Java provides various ways to set up a parallel program using multi-threading. Yet, multi-threading is not easy: partitioning a problem into smaller pieces, making separate threads solve them, and recombining the partial results into a final goal. 
+The ACD Data Explorer allows you to open, search and filter Airbnb datasets in CSV format (, as delimeter). You can also observe some statistics and charts about the active data and save it.
 
-This projects both helps you to understand this process and provides you with various techniques to code it in Java, based on the simple problem of calculating the sum of the elements of a large array. 
+You can open data sets directly from an internet source by using its URL.
 
-Finding the sum here is like a big job that will handled by a group of workers and, of course, a foreman. 
+<b>Desing and Implementation</b> 
 
-While workers are to solve a given sub task, a forman is reponsbile of 4 important activities:
-<ol>
-  <li>Decompsing the problem into smaller parts or sub tasks
-  <li>Allocating sub tasks to workers
-  <li>Obseerving workers' progress, if necessary
-  <li>After workers complete their parts, recombining the sub solutions coming from the workers into a final solution. 
-<ol>
+The projects was fully coded in Java using Swing and Java collections. In this version, I did not use Java Stream and Functinal Interfaces on purpose. It is beacuse of that I am going to develope another version of the same software that will be developed using Java Stream and even JavaFX later.
 
-In the implementation, the distinction will come from the partitionning of the problem (it may be iterative or recursive), the definitions of workers and forman, and the recombination of sub solutions. 
+I desinged the software by paying considerable attention to modern Software Engineering an Object Oriented Design principles. In the code, you will find a well-defined  structure in which software modules have been properly seperated, including Gui (View), Parser (Model) and Dataset (Controller).
 
-Java provides a large variety of means for multi-threading. In this project, you'll find (for now) implemenations including Thread, Runnable, Callable, Future and ExecutorService, being applyed to the same problem. Thusi you will be alble to see the differences.
-  
-The project's workers (called summers) are SummerThread, SummerRunnable and SummerCallable. While SummerThread extends the Thread class,  others implements Runnable and Callable interfaces, respectively. Each summer is intented to calculate the sum of the given part of an array. 
+Some of the principles I have tried to follow are <b>Abstraction, Encapsulation, Information Hiding and Low Coupling and High Cohesion</b>. To this end, in addition to numerous minor fine-tuning in the code, I applied vairous design patterns to obtaind a sound, flexiple and maintai code.
 
-ParalleSummer classes are formans of the Project. Each ParallelSummer uses a group of Summers to calculate the overall sum, either using Java ExecutorService or more conventinal means to manage the muli-threading process. 
+I used <b>Facades</b> in packages <b>gui.charts, gui.dataviewers and dataset</b>. These also comply with the <b>Factory</b> design pattern. Moreover, for the implementatipn of filtering mechanisms in the dataset package, I applied <b>Decorator</b> design pattern. 
 
+Please inspect the class diagram below and the screen outs of the software to understand well its functions. 
 
+<b>Class Diagram</b>
 
+<b>Screen-outs</b>
