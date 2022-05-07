@@ -1,4 +1,4 @@
-![Alt text](https://github.com/acdirican/acddata-data-explorer-for-airbnb-datasets/blob/master/logo.png?raw=true)
+![Alt text](https://github.com/acdirican/acdata-data-explorer-for-airbnb-datasets/blob/master/logo.png?raw=true)
 
 # ACData - Data Explorer for Airbnb Datasets
 
@@ -22,7 +22,7 @@ Please inspect the class diagram below and the screen print outs of the software
 
 <b>Screen Print outs</b>
 <li>Main Frame</li>
-![Alt text](https://github.com/acdirican/acddata-data-explorer-for-airbnb-datasets/blob/master/mainframe.jpg?raw=true)
+![Alt text](https://github.com/acdirican/acdata-data-explorer-for-airbnb-datasets/blob/master/mainframe.jpg?raw=true)
 
 <li>Statistics Dialog</li>
-![Alt text](https://github.com/acdirican/acddata-data-explorer-for-airbnb-datasets/blob/master/statistics.jpg?raw=true)
+![Alt text](https://github.com/acdirican/acdata-data-explorer-for-airbnb-datasets/blob/master/statistics.jpg?raw=true)
