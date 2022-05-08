@@ -1,4 +1,4 @@
- <img align = "center" src="https://github.com/acdirican/acdata-data-explorer-for-airbnb-datasets/blob/master/logo.png?raw=true" width="150" />
+ <img align = "center" src="https://github.com/acdirican/acdata-data-explorer-for-airbnb-datasets/blob/master/logo.png?raw=true" />
  
  # Robin&trade; - Data Explorer for Airbnb Datasets 
 
