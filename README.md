@@ -28,10 +28,10 @@ Please inspect the class diagram below and the screen print outs of the software
 <li>Main Frame</li>
 <img width="600" src="https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets/blob/master/mainframe.jpg?raw=true" />
 
-<li>Open Web Source (under the Edit menu)</li>
+<li>Open Web Source (int the File menu)</li>
 <img width="600" src="https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets/blob/master/webresources.jpg?raw=true" />
 
-<li>Find (under the File menu)</li>
+<li>Find (int the Edit menu)</li>
 <img width="400" src="https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets/blob/master/find.jpg?raw=true" />
 
 <li>Property Details (double click a table line)</li>
