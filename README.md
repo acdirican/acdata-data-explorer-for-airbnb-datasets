@@ -28,5 +28,11 @@ Please inspect the class diagram below and the screen print outs of the software
 <li>Main Frame</li>
 <img width="700" src="https://github.com/acdirican/acdata-data-explorer-for-airbnb-datasets/blob/master/mainframe.jpg?raw=true" />
 
+<li>Open Web Source (under the Edit menu)</li>
+<img width="700" src="https://github.com/acdirican/acdata-data-explorer-for-airbnb-datasets/blob/master/webresources.jpg?raw=true" />
+
+<li>Search (under the File menu)</li>
+<img width="700" src="https://github.com/acdirican/acdata-data-explorer-for-airbnb-datasets/blob/master/webresources.jpg?raw=true" />
+
 <li>Statistics Dialog</li>
 <img width="700" src="https://github.com/acdirican/acdata-data-explorer-for-airbnb-datasets/blob/master/statistics.jpg?raw=true" />
