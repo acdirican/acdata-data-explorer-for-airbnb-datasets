@@ -22,9 +22,19 @@ Unit tests and further fixes to reduce the sizes of some classes are on the way.
 
 Please inspect the class diagram below and the screen print outs of the software to understand well its functions. 
 
-<b>Class Diagram</b>
+<b>Class Diagrams</b>
 
-Coming soon... :-)
+<li>Main</li>
+
+<img width="200" src="https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets/blob/master/diagrams/com.acdirican.robin.png?raw=true" />
+
+<li>Dataset Package</li>
+
+<img width="400" src="https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets/blob/master/diagrams/com.acdirican.robin.dataset.png?raw=true" />
+
+<li>Gui Package</li>
+
+<img width="400" src="https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets/blob/master/diagrams/com.acdirican.robin.gui.png?raw=true" />
 
 <b>Screen Print outs</b>
 <li>Main Frame</li>
