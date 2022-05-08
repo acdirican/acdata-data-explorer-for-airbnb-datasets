@@ -23,7 +23,9 @@ Unit tests and further fixes to reduce the sizes of some classes are on the way.
 Please inspect the class diagram below and the screen print outs of the software to understand well its functions. 
 
 <b>Class Diagram</b>
+
 Coming soon... :-)
+
 <b>Screen Print outs</b>
 <li>Main Frame</li>
 <img width="600" src="https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets/blob/master/mainframe.jpg?raw=true" />
