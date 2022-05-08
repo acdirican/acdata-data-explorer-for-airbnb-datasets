@@ -54,7 +54,7 @@ class PropertyDialog extends Dialog {
 	private LabeledValue<String> room_type;
 	
 	public PropertyDialog(MainFrame main, Dataset current, int index) {
-		super(main, "Property Details", 600, 800);
+		super(main, "Property Details", 700, 600);
 		this.dataset = current;
 		this.index = index;
 		this.property = current.get(index);
