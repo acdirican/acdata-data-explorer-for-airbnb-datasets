@@ -2,15 +2,18 @@ package com.acdirican.robin.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.time.LocalDate;
 
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 
 import com.acdirican.robin.dataset.entities.Dataset;
 import com.acdirican.robin.dataset.entities.Property;
@@ -51,7 +54,7 @@ class PropertyDialog extends Dialog {
 	private LabeledValue<String> room_type;
 	
 	public PropertyDialog(MainFrame main, Dataset current, int index) {
-		super(main, "Property Details", 500, 700);
+		super(main, "Property Details", 600, 800);
 		this.dataset = current;
 		this.index = index;
 		this.property = current.get(index);
@@ -68,6 +71,7 @@ class PropertyDialog extends Dialog {
 
 	private Component createNavigation() {
 		JPanel panel =  new JPanel(new FlowLayout());
+		panel.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
 		JButton firstButton =  new JButton("First");
 		firstButton.addActionListener(new ActionListener() {
 			@Override
@@ -93,7 +97,7 @@ class PropertyDialog extends Dialog {
 			}
 		});
 		
-		JButton lastButton =  new JButton("First");
+		JButton lastButton =  new JButton("Last");
 		lastButton.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -102,6 +106,8 @@ class PropertyDialog extends Dialog {
 		});
 		
 		numberLabel =  new JLabel("...");
+		numberLabel.setPreferredSize(new Dimension(100, 30));
+		numberLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		
 		panel.add(firstButton);
 		panel.add(previousButton);
@@ -175,6 +181,6 @@ class PropertyDialog extends Dialog {
 		calculated_host_listings_count.setValue(property.getCalculated_host_listings_count());
 		availability_365.setValue(property.getAvailability_365());
 			
-		numberLabel.setText(String.valueOf(index));
+		numberLabel.setText(String.valueOf(index + 1 ));
 	}
 }

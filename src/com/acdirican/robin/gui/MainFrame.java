@@ -154,7 +154,13 @@ public class MainFrame extends JFrame {
 
 			@Override
 			public void mouseReleased(MouseEvent e) {
+				
 				if (e.getClickCount() == 2) {
+					if (current == null) {
+						JOptionPane.showMessageDialog(parent, "Please load a dataset first.");
+						return;
+					}
+					
 					new PropertyDialog(parent, current, table.getSelectedRow());
 				}
 			}

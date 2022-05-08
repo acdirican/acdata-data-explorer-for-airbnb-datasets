@@ -47,7 +47,7 @@ public class LabeledValue<T> extends JPanel{
 	}
 	
 	public LabeledValue(String labelText, T value) {
-		this(labelText, value, 600);
+		this(labelText, value, 500);
 	}
 
 	public T getValue() {

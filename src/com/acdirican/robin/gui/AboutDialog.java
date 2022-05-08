@@ -27,13 +27,15 @@ class AboutDialog extends Dialog {
 	private static final long serialVersionUID = 1941437021480027001L;
 
 	public AboutDialog(MainFrame main) {
-		super(main, "About",600, 600);
+		super(main, "About",700, 700);
 		
 		setLayout(new BorderLayout());
 
 		JLabel textLabel = new JLabel("<html><body><center>ACD Data Explorer for Airbn Datasets v1.0 <br>"
-				+ "Copyright (c) 2022 Ahmet Cengizhan Dirican <br>" + "All rights reserved <br> "
-				+ "<a href='https://github.com/acdirican'>https://github.com/acdirican</a></body></html>");
+				+ "Copyright (c) 2022 Ahmet Cengizhan Dirican <br>" + "All rights reserved <br><br>"
+				+ "acdirican@gmail.com <br>"
+				+ "<a href='https://github.com/acdirican'>https://github.com/acdirican</a> <br><br> "
+				+ "Project Repository:<br><a href='https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets'>https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets</a></body></html>");
 		textLabel.setHorizontalAlignment(JLabel.CENTER);
 		textLabel.setFont(new Font("Arial", Font.BOLD, 20));
 		
