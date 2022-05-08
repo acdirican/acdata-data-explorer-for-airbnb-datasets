@@ -26,16 +26,16 @@ Please inspect the class diagram below and the screen print outs of the software
 
 <b>Screen Print outs</b>
 <li>Main Frame</li>
-<img width="700" src="https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets/blob/master/mainframe.jpg?raw=true" />
+<img width="600" src="https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets/blob/master/mainframe.jpg?raw=true" />
 
 <li>Open Web Source (under the Edit menu)</li>
-<img width="700" src="https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets/blob/master/webresources.jpg?raw=true" />
+<img width="600" src="https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets/blob/master/webresources.jpg?raw=true" />
 
 <li>Find (under the File menu)</li>
-<img width="700" src="https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets/blob/master/find.jpg?raw=true" />
+<img width="600" src="https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets/blob/master/find.jpg?raw=true" />
 
 <li>Property Details (double click a table line)</li>
-<img width="700" src="https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets/blob/master/propertydetails.jpg?raw=true" />
+<img width="600" src="https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets/blob/master/propertydetails.jpg?raw=true" />
 
 <li>Statistics Dialog</li>
-<img width="700" src="https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets/blob/master/statistics.jpg?raw=true" />
+<img width="600" src="https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets/blob/master/statistics.jpg?raw=true" />
