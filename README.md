@@ -30,6 +30,10 @@ Please inspect the class diagram below and the screen print outs of the software
 
 <img width="200" src="https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets/blob/master/diagrams/com.acdirican.robin.png?raw=true" />
 
+<li>Parser Package</li>
+
+<img width="300" src="https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets/blob/master/diagrams/com.acdirican.robin.parser.png?raw=true" />
+
 <li>Dataset Package</li>
 
 <img width="400" src="https://github.com/acdirican/robin-data-explorer-for-airbnb-datasets/blob/master/diagrams/com.acdirican.robin.dataset.png?raw=true" />
